@@ -43,7 +43,7 @@ private:
 
     void runGnuplot(const std::string &filename) const {
         std::string cmd =
-                "C:\\tools\\common\\gnuplot\\bin\\gnuplot.exe -e \"FILE='" + filename + "'\" C:\\work\\fvm\\vis.plt";
+                "gnuplot -e \"FILE='" + filename + "'\" ../vis.plt";
         std::system(cmd.c_str());
     }
 
