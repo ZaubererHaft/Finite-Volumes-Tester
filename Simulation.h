@@ -49,7 +49,6 @@ public:
         double t = dt;
         while (t < end_time) {
             counter++;
-#pragma omp parallel for
             for (int i = 0; i < _currCells.size(); i++) {
                 Cell<L> left{0, 0};
                 Cell<L> middle{0, 0};
